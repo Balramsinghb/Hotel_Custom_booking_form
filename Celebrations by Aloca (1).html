@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap flex</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Latest compiled and minified CSS -->
+
+<link rel='stylesheet' id='bootstrap-css' href='https://aloca.wpengine.com/wp-content/themes/homey-child/css/bootstrap.min.css?ver=3.3.7' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-select-css' href='https://aloca.wpengine.com/wp-content/themes/homey-child/css/bootstrap-select.min.css?ver=1.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='tfree-font-awesome-css' href='https://aloca.wpengine.com/wp-content/plugins/testimonial-free/src/Frontend/assets/css/font-awesome.min.css?ver=2.5.2' type='text/css' media='all' />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<style>
+    .locationname {
+        font-size: 30px;
+        color: #DAA257;
+        font-family: Poppins;
+    }
+    
+    .btn-greybtn{
+        background-color: #ededee !important;
+        border: 1px solid #b1b1b1;
+        padding: 10px 14px;
+        
+    }
+    
+    .btn-greybtn:hover {
+        background-color: #fff !important;
+        border: 1px solid #b1b1b1 !important;
+        padding: 10px 14px;
+        
+    }
+
+    .btn-greybtn:focus {
+       outline: none !important;
+       background-color: #fff !important;
+        border: 1px solid #b1b1b1 !important;
+        padding: 10px 14px;
+    }
+
+    .btn-greybtn:active {
+        outline: none !important;
+        background-color: #fff !important;
+        border: 1px solid #b1b1b1 !important;
+        padding: 10px 14px;
+    }
+
+
+
+    .locationimg{
+        width: 100%;
+        height: 500px;
+    }
+
+    .p-0 {
+        padding: 0px !important;
+    }
+
+    .border-1 {
+        border: solid 2px #fff;
+    }
+
+    .price{
+        padding:8px 0px 0px 0px
+    }
+
+    .guest-m-t {
+        margin-top: 40px;
+    }
+
+
+    .paragraph{
+        padding-top: 10px;
+        font-size: 18px;
+        font-family: Poppins;
+        line-height: 30px;
+    }
+
+    .heading-about {
+        font-size: 34px;
+        color: #484A55;
+        font-family: Poppins;
+    }
+
+.venuefalicilites-list {
+    color: #222222;
+    font-size: 18px;
+    font-family: Poppins;
+    margin: 0px;
+    padding: 0px;
+   
+}
+
+
+
+ul.venuefalicilites-list li{
+    list-style: none;
+    margin: 10px 0px;
+    padding: 0px 0px;
+    font-size: 16px;
+}
+
+.form-m-2 {
+    margin-top: 15px;
+}
+
+.form-control {
+    height: 45px !important;
+    border: 1px solid #999999;
+}
+
+
+.btn-orange {
+    background: #DAA257;
+    color: #fff;
+    padding: 10px 50px !important;
+}
+.pricebooking {
+    display: flex;
+}
+
+
+    @media only screen and (max-width: 600px) {
+
+
+
+    }
+
+
+    </style>
+<body>
+
+    <div class="container-fluid">   <!-- start container-fluid -->
+        <div class="row">        
+            <div class="col-md-2 p-0 border-1"><img src="img/img1.jpg" alt="" class="img-fluid img-responsive locationimg"></div>
+            <div class="col-md-2 p-0 border-1 "><img src="img/img2.jpg" alt="" class="img-fluid img-responsive locationimg"></div>
+            <div class="col-md-4 p-0 border-1 "><img src="img/img3.jpg" alt="" class="img-fluid  img-responsive locationimg"></div>
+            <div class="col-md-2 p-0 border-1 "><img src="img/img4.jpg" alt="" class="img-fluid img-responsive locationimg"></div>
+            <div class="col-md-2 p-0 border-1 "><img src="img/img5.jpg" alt="" class="img-fluid img-responsive locationimg"> </div>        
+        </div>
+    </div> <!-- end container-fluid -->
+
+
+
+
+
+
+    <div class="container guest-m-t"> <!-- Start container -->
+        <div class="row guest-m-t">  <!-- start row guest-m-t -->
+            <div class="col-md-8"> <!-- Start col-md-8 -->
+                <div class="row">
+                    <div class="col-md-12"> 
+                    <h1 class="locationname"> Location Name</h1>
+                    <p class="pb-2">Location, State, Country</p>
+                    </div>
+                    <div class="guest-m-t"> 
+                        <div class="col-md-4">   
+                            <p class="p-0 m-0">Guest</p>                        
+                             <div class="btn-group">
+                                <table class="table table-bordered">
+                                    <tbody>
+                                        <button type="button" id="button" class="btn btn-greybtn" value="2000">UP To 15</button>
+                                        <button type="button" id="button" class="btn btn-greybtn" value="2500">16-30</button>
+                                        <button type="button" id="button" class="btn btn-greybtn" value="3000">31-50</button>
+                                    </tbody>
+                                </table>
+                            </div> 
+                        </div>
+                        <div class="col-md-8">   
+                            <p class="price">Price</p>                                                           
+                            <div class="pricebooking">$ <p  id="priceDisplay">2000</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-12 guest-m-t"> 
+                    
+                            <h4 class="heading-about p-0">About</h4>
+                            <p class="paragraph p-0">About
+                                Lorem ipsum dolor sit amet. Qui velit voluptas id sunt accusantium non mollitia officia ut rerum ullam et iste pariatur. Sit enim sint sed quia nobis aut dignissimos nihil qui earum quaerat non commodi dolor quo culpa consequatur quo enim possimus. <br> <br>
+                                Vel commodi illo ut animi quaerat non unde galisum et similique aspernatur est quos libero est sint pariatur et sint quae. Et ipsam esse eum libero labore et repellat molestiae non voluptatem corrupti qui galisum voluptas eos fugiat animi.<br><br>
+                                Qui iure neque vel rerum beatae est illum nostrum eos veritatis doloremque et Quis dolores et excepturi illum. Quo pariatur dolorem 33 recusandae illum aut quia dolore aut consequatur aperiam! Nam assumenda vero et minus magnam aut aliquid facere sit Quis ipsa. Aut pariatur blanditiis qui amet velit aut omnis consequuntur et illum porro aut facere voluptas sit quod vero.</p>
+                         </div>  
+
+
+                         <div class="col-md-12 guest-m-t"> 
+                            <div class="row">
+                                <div class="col-md-4"> <h3 class="venuefalicilites">  VENUE FACILITIES  </h3> </div>
+                                <div class="col-md-4">
+                                    <ul class="venuefalicilites-list">
+                                        <li> <i class="fa fa-check" aria-hidden="true"></i> VA System  </li>
+                                        <li> <i class="fa fa-check" aria-hidden="true"></i> Bridal Change Room </li>
+                                        <li> <i class="fa fa-check" aria-hidden="true"></i> Chapel </li>
+                                        <li> <i class="fa fa-check" aria-hidden="true"></i> Kitchen </li>
+                                        <li> <i class="fa fa-check" aria-hidden="true"></i> Pet-Friendly </li>
+                                        <li> <i class="fa fa-check" aria-hidden="true"></i> Table and seating </li>
+                                        <li> <i class="fa fa-check" aria-hidden="true"></i> Wifi</li>
+                                        
+                                    </ul>
+        
+        
+                                </div>
+                                <div class="col-md-4">                             
+                                    <ul class="venuefalicilites-list">
+                                    <li> <i class="fa fa-check" aria-hidden="true"></i> VA System  </li>
+                                    <li> <i class="fa fa-check" aria-hidden="true"></i> Bridal Change Room </li>
+                                    <li> <i class="fa fa-check" aria-hidden="true"></i> Chapel </li>
+                                    <li> <i class="fa fa-check" aria-hidden="true"></i> Kitchen </li>
+                                    <li> <i class="fa fa-check" aria-hidden="true"></i> Pet-Friendly </li>
+                                    <li> <i class="fa fa-check" aria-hidden="true"></i> Table and seating </li>
+                                    <li> <i class="fa fa-check" aria-hidden="true"></i> Wifi</li>                            
+                                </ul></div>                        
+                            </div>
+                         </div>  
+
+
+                    </div> <!-- guest-m-t -->
+
+                </div>
+
+
+            </div> <!-- End col-md-8 -->
+
+
+
+
+            <div class="col-md-4 guest-m-t"> <!-- Start col-md-4 -->
+              <div class="locationmap"> <img src="img/location.jpg" class="img-responsive" alt=""> </div> 
+
+              <form class="form-horizontal guest-m-t" action="/action_page.php">
+                <div class="form-group">
+                    <div class="col-md-12">
+                    <input type="Name" class="form-control" id="Name" placeholder="Name">
+                 </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-12">
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                 </div>
+                </div>
+
+
+                <div class="form-group">
+                    <div class="col-md-12">
+                    <input type="phone" class="form-control" id="phone" placeholder="Phone">
+                 </div>
+                </div>
+
+
+                <div class="form-group">
+                    <div class="col-md-12">
+                    <input type="Pre-filled" class="form-control" id="Pre-filled" placeholder="Pre-filled location name">
+                 </div>
+                </div>
+
+                <div class="form-group1">           
+                    <select class="form-control">
+                      <option>How did you hear about us</option>
+                      <option>How did you hear about us</option>
+                      <option>How did you hear about us</option>
+                      <option>How did you hear about us</option>
+                    </select>
+                    </div>
+
+                    <div class="form-group form-m-2">
+                        <div class="col-md-12">
+                        <input type="Wedding" class="form-control" id="Wedding" placeholder="Wedding date">
+                     </div>
+                    </div>
+     
+                  <div class="form-group">
+                  <div class="col-sm-12">
+                    <div class="checkbox">
+                      <label><input type="checkbox"> Our date is flexible </label>
+                    </div>
+                  </div>
+                </div>
+
+
+                
+                <div class="form-group">
+                  <div class="col-sm-offset-3 col-sm-9">
+                    <button type="submit" class="btn btn-orange">Enquire</button>
+                  </div>
+                </div>
+              </form>
+
+            </div> <!-- End col-md-4 -->
+
+
+        </div> <!-- end row guest-m-t -->
+    </div> <!-- end container -->
+    <script>
+        $(document).ready(function() {
+        var price = 0;
+        $('.btn').click(function() {
+            var priceValue = $(this).val();
+            if ($(this).hasClass("active")) {
+            $(this).removeClass('active');
+            
+            price = parseInt($(this).val());
+            } else {
+            $(this).addClass('active');
+            price = parseInt($(this).val());
+            }
+        $('#priceDisplay').text(price);
+        })
+        })
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
